@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="36dp">
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="8dp"
+        android:text="궁궐을 선택하세요"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/lvGungName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/tvEmpty"
+        android:paddingBottom="24dp"
+        android:paddingTop="24dp" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_weight="1"
+        android:background="@drawable/icon_pause" />
+
+    <TextView
+        android:id="@+id/tvPlay"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnPlay"
+        android:layout_below="@+id/btnPlay"
+        android:layout_marginTop="-45dp"
+        android:gravity="center"
+        android:text="P A U S E"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnPlay"
+        android:layout_marginEnd="55dp"
+        android:layout_weight="1"
+        android:background="@drawable/icon_stop" />
+
+    <TextView
+        android:id="@+id/tvStop"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnStop"
+        android:layout_below="@+id/btnPlay"
+        android:layout_marginTop="-45dp"
+        android:gravity="center"
+        android:text="S T O P"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
